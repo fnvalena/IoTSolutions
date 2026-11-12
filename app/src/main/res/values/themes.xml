@@ -1,0 +1,14 @@
+<resources>
+    <!-- Tema base sin ActionBar: toda la interfaz se dibuja con Jetpack Compose -->
+    <style name="Theme.IoTSolutions" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/SlideAnimation</item>
+    </style>
+
+    <!-- Transición deslizante al navegar entre Activities -->
+    <style name="SlideAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+</resources>
